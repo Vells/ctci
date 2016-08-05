@@ -5,7 +5,10 @@ if a string has all unique characters
 
 
 def unique_characters(a_string):
-
+    """
+    Space complexity: O(1)
+    TIme complexity: O(n)
+    """
     if a_string is None:
         return False
 
