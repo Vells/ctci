@@ -16,8 +16,8 @@ def rotate_matrix(matrix):
         for index in range(layer, matrix_size - 1 - layer):
             top_left = matrix[layer][index]
             top_right = matrix[index][matrix_size - 1 - layer]
-            bottom_left = matrix[matrix_size - 1 - index][layer]
             bottom_right = matrix[matrix_size - 1 - layer][matrix_size - 1 - index]
+            bottom_left = matrix[matrix_size - 1 - index][layer]
 
             matrix[layer][index] = bottom_left
             matrix[index][matrix_size - 1 - layer] = top_left
